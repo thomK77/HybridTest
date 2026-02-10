@@ -1,7 +1,7 @@
 using ObjCRuntime;
 using UIKit;
 
-namespace HybridTest.MauiApp;
+namespace HybridTest;
 
 public class Program
 {

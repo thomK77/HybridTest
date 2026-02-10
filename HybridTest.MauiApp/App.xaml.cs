@@ -1,21 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.IO;
-using Microsoft.Extensions.Logging;
-using Microsoft.Maui.Controls;
-using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.PlatformConfiguration;
-using HybridTest;
+namespace HybridTest;
 
-namespace HybridTest
+public partial class App : Application
 {
-    public partial class App : Application
+    public App()
     {
-        public App()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            MainPage = new MainPage();
-        }
+        MainPage = new MainPage();
     }
 }
