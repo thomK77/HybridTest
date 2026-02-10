@@ -1,11 +1,21 @@
-namespace HybridTest.MauiApp;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using Microsoft.Extensions.Logging;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.PlatformConfiguration;
+using HybridTest;
 
-public partial class App : Application
+namespace HybridTest
 {
-    public App()
+    public partial class App : Application
     {
-        InitializeComponent();
+        public App()
+        {
+            InitializeComponent();
 
-        MainPage = new MainPage();
+            MainPage = new MainPage();
+        }
     }
 }
