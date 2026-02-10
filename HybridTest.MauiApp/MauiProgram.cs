@@ -1,29 +1,4 @@
-using Microsoft.Extensions.Logging;
-using HybridTest.Shared.Services;
+// This is a generated file. Do not edit directly.
+namespace HybridTest;
 
-namespace HybridTest.MauiApp;
-
-public static class MauiProgram
-{
-    public static MauiApp CreateMauiApp()
-    {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts =>
-            {
-                fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-            });
-
-        builder.Services.AddMauiBlazorWebView();
-
-#if DEBUG
-        builder.Services.AddBlazorWebViewDeveloperTools();
-        builder.Logging.AddDebug();
-#endif
-
-        builder.Services.AddSingleton<IWeatherService, WeatherService>();
-
-        return builder.Build();
-    }
-}
+// Other existing code
