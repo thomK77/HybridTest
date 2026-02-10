@@ -1,4 +1,4 @@
-namespace HybridTest.MauiApp;
+namespace HybridTest;
 
 public partial class MainPage : ContentPage
 {

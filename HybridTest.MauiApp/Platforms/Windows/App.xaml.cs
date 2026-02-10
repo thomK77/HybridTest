@@ -1,6 +1,6 @@
 using Microsoft.UI.Xaml;
 
-namespace HybridTest.MauiApp.WinUI;
+namespace HybridTest.WinUI;
 
 public partial class App : MauiWinUIApplication
 {

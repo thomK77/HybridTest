@@ -1,6 +1,6 @@
 using Foundation;
 
-namespace HybridTest.MauiApp;
+namespace HybridTest;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate

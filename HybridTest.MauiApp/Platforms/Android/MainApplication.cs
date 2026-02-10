@@ -1,7 +1,7 @@
 using Android.App;
 using Android.Runtime;
 
-namespace HybridTest.MauiApp;
+namespace HybridTest;
 
 [Application]
 public class MainApplication : MauiApplication
