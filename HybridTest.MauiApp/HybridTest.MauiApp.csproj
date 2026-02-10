@@ -38,4 +38,10 @@
     <ProjectReference Include="..\HybridTest.Shared\HybridTest.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="wwwroot\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
