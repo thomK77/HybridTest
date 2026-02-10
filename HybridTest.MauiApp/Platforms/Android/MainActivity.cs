@@ -1,10 +1,19 @@
+// MainActivity.cs
+// Updated namespace
+namespace HybridTest;
+
 using Android.App;
 using Android.Content.PM;
+using Android.Runtime;
 using Android.OS;
 
-namespace HybridTest.MauiApp;
-
-[Activity(Theme = "@style/Maui.SplashTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize | ConfigChanges.Density)]
-public class MainActivity : MauiAppCompatActivity
+[Activity(Label = "HybridTest", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
 {
+    protected override void OnCreate(Bundle savedInstanceState)
+    {
+        base.OnCreate(savedInstanceState);
+        global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+        LoadApplication(new App());
+    }
 }
